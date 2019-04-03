@@ -3,6 +3,9 @@ class Rochambeau {
         this.player = new Player();
         this.computer = new Player();
         this.scoreboard = new Scoreboard();
+        this.ROCK = 1;
+        this.PAPER = 2;
+        this.SCISSORS = 3;
     }
 
     storePlayerChoice(choice) {
