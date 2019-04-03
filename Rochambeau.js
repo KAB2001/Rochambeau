@@ -7,7 +7,7 @@ class Rochambeau {
 
     storePlayerChoice(choice) {
         this.player.choice = choice;
-        storeComputerChoice();
+        this.storeComputerChoice();
     }
 
     storeComputerChoice() {
