@@ -1,11 +1,11 @@
 rockButton = document.getElementById("rock");
-rockButton.addEventListener("click", storePlayerChoice());
+rockButton.addEventListener("click", storePlayerChoice(1));
 
 paperButton = document.getElementById("paper");
-rockButton.addEventListener("click", storePlayerChoice());
+rockButton.addEventListener("click", storePlayerChoice(2));
 
 scissorsButton = document.getElementById("scissors");
-rockButton.addEventListener("click", storePlayerChoice());
+rockButton.addEventListener("click", storePlayerChoice(3));
 
 playButton = document.getElementById("play");
 playButton.addEventListener("click", determineOutcome());
@@ -50,7 +50,7 @@ class Rochambeau {
         } else {
             msg = "Tie";
         }
-        return msg;
+        document.getElementById("result").textContent = msg;
     }
 
     updateScoreboard() {
