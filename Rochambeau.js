@@ -18,6 +18,26 @@ class Rochambeau {
     }
 
     determineOutcome() {
+        let msg = "";
+        if(this.player.choice !=== this.computer.choice) {
+            if(this.player.choice === 1) {
+                if(this.computer.choice === 3) {
+                    msg = "Win";
+                } else {
+                    msg="Lose"
+                }
+            } else if(this.player.choice === 2) {
+                if(this.player.choice > this.computer.choice) {
+                    msg = "Win"
+                } else {
+                    msg = "Lose"
+                }
+            } else {
+                msg = "Win"
+            }
+        } else {
+            msg = "Tie";
+        }
         return "";
     }
 
