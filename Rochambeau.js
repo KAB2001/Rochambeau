@@ -1,3 +1,15 @@
+rockButton = document.getElementById("rock");
+rockButton.addEventListener("click", storePlayerChoice());
+
+paperButton = document.getElementById("paper");
+rockButton.addEventListener("click", storePlayerChoice());
+
+scissorsButton = document.getElementById("scissors");
+rockButton.addEventListener("click", storePlayerChoice());
+
+playButton = document.getElementById("play");
+playButton.addEventListener("click", determineOutcome());
+
 class Rochambeau {
     constructor() {
         this.player = new Player();
