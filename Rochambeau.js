@@ -6,11 +6,12 @@ class Rochambeau {
     }
 
     storePlayerChoice(choice) {
-
+        this.player.choice = choice;
+        storeComputerChoice();
     }
 
     storeComputerChoice() {
-
+        this.computer.choice = Math.ceil(Math.random() * 3);
     }
 
     determineOutcome() {
