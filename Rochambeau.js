@@ -24,7 +24,7 @@ class Rochambeau {
                 if(this.computer.choice === 3) {
                     msg = "Win";
                 } else {
-                    msg="Lose"
+                    msg = "Lose"
                 }
             } else if(this.player.choice === 2) {
                 if(this.player.choice > this.computer.choice) {
@@ -38,7 +38,7 @@ class Rochambeau {
         } else {
             msg = "Tie";
         }
-        return "";
+        return msg;
     }
 
     updateScoreboard() {
